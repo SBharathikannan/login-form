@@ -1,60 +1,77 @@
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-  }
-  .login-container {
-    width: 300px;
-    margin: 0 auto;
-    margin-top: 100px;
-    background: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  .login-container h2 {
-    text-align: center;
-    color: #333;
-  }
-  .login-container input[type="text"],
-  .login-container input[type="password"] {
-    width: calc(100% - 20px);
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  .login-container input[type="submit"] {
-    width: 100%;
-    background: #4CAF50;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  .login-container input[type="submit"]:hover {
-    background: #45a049;
-  }
-</style>
-</head>
-<body>
+  <head>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+      }
+      .login-container {
+        width: 300px;
+        margin: 0 auto;
+        margin-top: 100px;
+        background: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .login-container h2 {
+        text-align: center;
+        color: #333;
+      }
+      .login-container input[type="text"],
+      .login-container input[type="password"] {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+      .login-container input[type="submit"] {
+        width: 100%;
+        background: #4caf50;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .login-container input[type="submit"]:hover {
+        background: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-container">
+      <h2>Login</h2>
+      <form action="/action_page.php">
+        <input
+          type="text"
+          placeholder="Enter Username"
+          name="username"
+          required
+        /><br />
 
-<div class="login-container">
-  <h2>Login</h2>
-  <form action="/action_page.php">
-    <input type="text" placeholder="Enter Username" name="uname" required><br>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="psw"
+          required
+        /><br />
 
-    <input type="password" placeholder="Enter Password" name="psw" required><br>
+        <input
+          type="password"
+          placeholder="Enter Confirm Password"
+          name="psw"
+          required
+        /><br />
+        <input type="submit" value="Login" />
+      </form>
 
-    <input type="submit" value="Login">
-  </form>
-
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, labore?</p>
-</div>
-
-</body>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
+        labore?
+      </p>
+    </div>
+  </body>
 </html>
